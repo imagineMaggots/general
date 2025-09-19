@@ -1,0 +1,13 @@
+because i keep forgetting:
+
+crlf = source(https://developer.mozilla.org/en-US/docs/Glossary/CRLF#:~:text=CR%20=%20Carriage%20Return%20(%20%5Cr,the%20beginning%20of%20the%20line, which itself mentiones Wikipedia++) ?What do i mean by: Wikipedia++; any time Wikipedia is backed by larger organizations, such as it is here. This entails, that i could even use wikipedia as a valid literature reference, as of 2025-09-19)
+
+carriage return \r, line feed \l (why do i always think of "left float(ing)"?)
+
+The carriage return is a signal (or flag or whatever... '\r'=Ox0D=13=00001101) is the character for the operating system indicating, that the curser should move to the first position in the current line. We can achieve that on our keyboard using 'Pos1' (yes this is useful and much needed, if i were to replace any key on modern keyboards, it'd be 'CapsLk'... ONE CAN JUST HOLD SHIFT --- CAPITALIZING IS COMMON ENOUGH (this can be taken out of context), THAT I AM GOING TO ARGUE, THAT ONE FINGER SHOULD ALWAYS LIE on that key). 
+
+The "line feed" character places the cursor in the next line. Character Code 10 (earlier code, because it creating any line has to come first logically). 0x0A=10=00001010. Can be achieved with 'arrow down'.
+
+Combining both lends the same result as hitting 'Enter' at the end of a line.
+
+ToDo: Show this in C i guess.
