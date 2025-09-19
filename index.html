@@ -1,9 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Problems</title>
+        <title>Problems</title> 
+        <!--I just tried to switch of my light... By hitting the light switch... Then wondering why the room is still lit up... And then remembering it's daytime... ?-->
+        <!--I like this as a general style-->
         <style>
-            body{font-family: 'Courier New', monospace;}
+            body {
+                font-family: 'Courier New', monospace;
+                background-color: rgba(130, 13, 13, 0.87);
+            }
+            
+            h2 {
+                color: rgba(255, 130, 130, .87);
+                background-color: black;
+                margin-top: 13mm; 
+                padding-top: 1em;
+                padding-bottom: 1em;
+                padding-left: 1em;
+            }
+
+            p {
+                margin-left: 1em;
+                margin-right: 1em;
+            }
+
+            ul {
+                margin-left: 2em;
+                margin-right: 2em;
+            }
+
+            .normal {
+                background-color: white;
+                margin-right: 13%;
+                margin-left: 13%;
+            }
         </style>
     </head>
     <body>
@@ -13,16 +43,38 @@
                 Bluntly put: My folders in firefox are overcrowded with dozens of links that are either <b>important for my thesis</b> or <b>important for my studies</b>. 
                 I could theoretically keep everything just in firefox and organize my folders in there, but what if i want to keep more than just some floating links, 
                 like the actual PDF for scientific papers or exported Images of Webpages (results in a PDF in my case). Therefore i need a structured, yet efficient way to 
-                store and sort my current data, but also a way of dealing with any data, that might arrive in the future (presume: i live another day. This will be updated as soon as i won't).
+                store and sort my current data, but also a way of dealing with any data, that might arrive in the future (presume: i live another day. This will be updated as soon as i won't).<!--I've better stuff to do than to automatically update this line as soon as i die.-->
             </p>
             <h2>Theoretical Approach</h2>
             <p id="Theoretical Approach">
                 Let's visually imagine ('visualize' implies too much) a gigantic, ideally infinitely large library. Such a massive structure needs to be well... organized! <br>
                 In order to find anything, you'd already need an structured approach to finding anything in this library. Gladly there exists a very simple 'system', which we use everyday 
-                (and have sometimes done in our childhood) <b>tagging</b>! Now there exist many ways to prevent an infinite amount of tags comming in, commonly a stemming-algorithm 
+                (and have sometimes done in our childhood) <b>tagging</b>! Now there exist many ways to prevent an infinite amount of tags coming in, commonly a stemming-algorithm 
                 (which we already know how it works, since this is applied in the english language, when trying to find the 'original', i.e. stem, of any given word). 
                 For more information see: <a href=https://tartarus.org/martin/PorterStemmer/>Martin Porters</a> own website and <a href="https://github.com/snowballstem">Snowball</a>.<br><br>
-                
+            </p>
+            <p id="Finding documents">
+                Now how would one go on about finding a (assumption:) properly tag'd &lt;article, book, ...> --~> document? 
+                Let's consider some cases:
+                <ul style="list-style-type:upper-roman;">
+                    <li>We know what piece of work we're looking for precisely. Cool... just look up the name of the document and you've got it. Boring.</li>
+                    <li>We know the topic and are looking for a piece of literature that's about the topic. First interesting case, but will be boring, as a broader topic should match a tag.</li>
+                    <li>We know the topic and are looking for a piece of literature including the topic (e.g., a larger piece like a book about mathematics, while we're only interested in linear algebra). Now it's getting a bit more interesting on the technical level, as we arrive back at the question: How do we want do determine said tags?</li>
+                </ul>
+            </p>
+            <h2>Current approach</h2>
+            <p id="Ai finds tags">
+                Do you like to read? You do not have to answer, because i offer a workaround: Are we interested in technology, that can read by itself and thus ultimately understand a human as well as what it needs? Again the answer is simple, as it is not concerned with anything that might happen in the future, but rather something that's happened in the <a href="https://chatgpt.com/">past</a>. An artificial intelligence is able to read any given document, faster than a human could (how quickly are <b>you</b> able to process texts and how quickly is your pc able to?) and could be able to summarize it's contents (in an <i>abstract</i> way) as well as fetch some <i>keywords</i>. <br>
+                Cool. Now we've got some data... <br>
+                Wait. Oh no! We're expecting data now! Coming from a computer! That means: We've got lots of data coming in rapidly fast! <br>
+            </p>
+            <h2>What to do?</h2>
+            <p id="todo">
+                Once i've finished my bachelors thesis, i might continue to work on this.<br>
+                Let's hope i pass!<br>
+                <br>
+                <br>
+                ... self-doubt can be paralizing.<br><br>
             </p>
         </div>
     </body>
