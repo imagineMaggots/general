@@ -8,4 +8,4 @@ Wäre mal wieder schön einfach nur (a) eine Vorlesung zu hören (b/1) evtl. ein
 side-project ideas:
 - calendar for only birthdays (in order to know how many people i got to know)
 - see: this, citezeit (will become a citation tool for myself i guess)
-- 
+- ?
