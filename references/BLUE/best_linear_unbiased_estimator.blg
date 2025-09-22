@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: best_linear_unbiased_estimator.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: abbrvnat.bst
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+Database file #1: bluelib.bib
+Warning--empty publisher in fadingchannels
+You've used 1 entry,
+            2773 wiz_defined-function locations,
+            596 strings with 4640 characters,
+and the built_in function-call counts, 353 in all, are:
+= -- 27
+> -- 10
+< -- 1
++ -- 4
+- -- 3
+* -- 22
+:= -- 63
+add.period$ -- 5
+call.type$ -- 1
+change.case$ -- 3
+chr.to.int$ -- 1
+cite$ -- 3
+duplicate$ -- 20
+empty$ -- 33
+format.name$ -- 4
+if$ -- 67
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 2
+newline$ -- 15
+num.names$ -- 4
+pop$ -- 11
+preamble$ -- 1
+purify$ -- 3
+quote$ -- 0
+skip$ -- 13
+stack$ -- 0
+substring$ -- 2
+swap$ -- 1
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 6
+warning$ -- 1
+while$ -- 3
+width$ -- 0
+write$ -- 22
+(There was 1 warning)

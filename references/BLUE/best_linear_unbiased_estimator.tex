@@ -1,0 +1,68 @@
+\documentclass{article}
+\title{Best Linear (unbiased) Estimator}
+\author{Hendrik Theede}
+\date{2025---09---22}
+\usepackage[left=2cm,right=2cm]{geometry}
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{abbrvnat}
+\usepackage{tikz}
+\usetikzlibrary{calc,positioning}
+\usepackage{pgfplots}
+\usepackage{caption}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, % Für in-offizielle Nicht-Releases das % vorne hinzusetzen. Ersetzt die Farben der Links durch die Boxen
+	linkcolor=black,
+	urlbordercolor={0 0 0},
+	urlcolor=blue, 
+	breaklinks=true,
+	pdftitle=Abschlussarbeit Theede 221201256,
+	pdfauthor=Hendrik Theede,
+	pageanchor,
+}
+
+
+
+\begin{document}
+\maketitle
+\section{Motivation}
+When dealing with samples garnered through (aqcuired by) any thinkable method\label{motivation:methods} one has to expect to that the incoming signal does not perfectly match our expectation. Say you have a 1 to 1 relationship, as you'd see in any function of some real value $x$, that we'll let be $f(x)=x$ (see here:~\nameref{fig:fx}) for now (for simplicities sake, as we're only concerned with the concept and not with any particular function, which might overcomplicate this issue as of this instance). Now let's add some random samples\ldots.
+\begin{figure}[h!]
+    \centering
+\begin{tikzpicture}
+    \begin{axis}[
+        title=$f(x)$,
+        domain=-8:8,
+        samples=200,
+    ]
+    \addplot[color=red]{x};
+    \end{axis}
+\end{tikzpicture}
+\caption{Plot of $f(x)=x$\label{fig:fx}}
+\end{figure}
+
+\begin{figure}[b]
+\hrule
+\vspace{1em}
+Have to rewrite this:
+~\ref{motivation:methods}: Which could include, e.g., video-footage of a QR-Code, user-behaviour trackers of various kinds (like GPS, website accesses (not necessarily noticable even in https), or more generally: human-software interaction (ai, web, \ldots any application could track \textit{something})), noisy signals in general (aqcuired over fading channels (where some information is ultimately lost, due to nature\cite{fadingchannels})).
+\end{figure}
+
+
+\newpage
+\section{Some Use-Cases}
+\subsection{1-dimensional}
+\subsection{2-dimensional}
+\subsection{The path to the $n-$th dimension}
+This is mathematically possible, but can be (1) difficult to describe to another person (2) difficult to display or (3) might not be needed.
+\begin{enumerate}
+    \item 
+    % Very same time: Of course there exists only one "time", but exaggerating using a superlative is a way of highlighting the previous. 
+    % (Because otherwise you could just display two functions at a time in that model and switch out the functions as/when needed. This explanation should come intuitively (theoretically), but i wanted to be more precise mathematically.)
+    \item Imagine the following scenario: You have to build a 3$-$dimensional model for 4 seperate functions of $x$ displaying all 4 functions at the very same time.
+    \item Raises the question: Why are \textit{you} interested in estimating 3 or more functions of $x$ at the same time? (And also why would you try and to so per hand? This can and should be done using a computer, for time efficiencies sake). 
+\end{enumerate}
+
+\bibliography{bluelib}
+\end{document}
