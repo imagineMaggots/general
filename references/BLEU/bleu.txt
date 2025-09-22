@@ -1,0 +1,25 @@
+https://aclanthology.org/P02-1040.Pdf
+
+Das evtl. eigenständig nochmals übersetzen und als Testdokument nutzen?
+
+Papineni et. al. (2002) zeigen:
+- Menschen Wochen bis Monate für Übersetzungen brauchten
+- Dass es mehrere richtige Übersetzungsmöglichkeiten für ein und denselben Satz einer menschlichen Sprache gibt
+- Genannte Autoren fanden einen systematischen Ansatz zur Bewertung der Qualität der Sprachübersetzung, welcher sich maschinell implementieren lässt, starke Korrelation (Ähnlichkeit) mit der menschlichen Einschätzungsfähigkeit (mit einem Korrelationskoeffizient über 95%, ggb. 500 Test-Sätzen aus diversen News) zeigt und sich daher eignet, um modernste Übersetzungssysteme auf sprachliche Qualität zu prüfen.
+- Dies erfolgt hierbei stets ggb. Referenzübersetzungen, welche in meinem Fall eigenständig erstellt werden. Ebenso, wie vergleichbare Übersetzungen. An dieser Stelle kann ich dann darauf achten, dass Fachterme richtig übersetzt werden! Das bedeutet für einen BLUE-Score ist es nicht nur denkbar, dass ich eigene Übersetzungen mir _überlege_, was auftreten _könnte_, sondern auch gezielt Werke eigenständig übersetzen sollte. Angefangen bei diesem, da ich hierdurch auf die Idee kam. Wiele weitere mögliche Übersetzungsschwierigkeiten hatte ich mir bereits einfallen lassen, diese kann ich evtl. integrieren, sollte es sich um nicht fest definierte Begriffe handeln, oder solche, welche auch gut und gerne verwechselt werden dürften, da Sie das gleiche in den jeweiligen Sprachen meinen!
+- Zum zuvorigen: Aus Urheberrechtsgründen sind in dieser Arbeit nur die eigens Übersetzten Versionen enthalten, nicht die Originale. Es wird keine Garantie ausgesprochen, dass in keinem Dokument ein inhaltlicher Fehler unterlaufen sein _könnte_, auf Grundlage eventuellem Missverständnissen des menschlichen Übersetzers auf fachlicher Ebene.
+
+
+
+
+N-Gramme:
+- Zählen in Wortketten, wie oft bestimmte Wortketten vorkommen und leitet daraus ab, wie wahrscheinlich es ist, dass bestimmte Wortketten auf andere folgen. 
+- Einfachster Fall: 1-Gramme. "The" "cat" "on" "a" "certain" "app" "icon" "is" "black".
+    - wahrscheinlich englisch, da sich grammatikalische Regeln (auf "The" und "a" folgt entweder ein Substantiv oder ein Attribut und dann ein Substantiv; der Satz hat ein Verb, welches einen Zustand oder eine Beschreibung dessen impliziert, welcher folgt "black" (also wie die Katze ist. Katze wäre bei 1-Grammen jedoch nicht direkt verwandt)).
+- 2 Gramme: Wie oft folgt z.B. "is black" auf "app icon"? Bereits weniger Fälle in der englischen Sprache, da App-Icon nicht zwangsweise schwarz sein müssen.
+- 3 Gramme: Wie oft folgt z.B. "icon is black" auf "a certain app"? Hier keine konkretere Aussage.
+- 4 Gramme: Wie oft folgt z.B. "app icon is black" auf "cat on a certain"? Begrenzte Fälle. Hier wäre z.B. die GitHub App denkbar.
+- Geeignet für die Unterscheidung zwischen sehr schlechter und guter Übersetzung, jedoch in der Form ungeeignet für schnelle Anwendungen, da zu unpräzise (damalig: bestes System bei <50%, was in unendlicher Potenz gegen null läuft)
+
+n-grams (formula for computation):
+$p_n = \frac{\sum_{C\in Candidates} \sum_{n-gram\in C} Count_{clip} (n-gram)}{\sum_{C'\in Candidates} \sum_{n-gram'\in C'} Count_{clip} (n-gram')}$
